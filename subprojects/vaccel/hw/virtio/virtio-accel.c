@@ -178,7 +178,7 @@ virtio_accel_vaccel_do_op(VirtIOAccelReq *req)
                             info.op.in[i].len);
         }
 
-        VADPRINTF("runtime op session_id=%" PRIu32 " successful\n",
+        VADPRINTF("runtime op session_id=%" PRId64 " successful\n",
                 info.sess_id);
     } else {
         if (local_err) {
@@ -227,7 +227,7 @@ virtio_accel_vaccel_get_timers(VirtIOAccelReq *req)
                             info.op.in[i].len);
         }
 
-        VADPRINTF("runtime op session_id=%" PRIu32 " successful\n",
+        VADPRINTF("runtime op session_id=%" PRId64 " successful\n",
                 info.sess_id);
     } else {
         if (local_err) {
